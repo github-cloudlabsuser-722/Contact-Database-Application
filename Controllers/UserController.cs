@@ -1,4 +1,5 @@
 using CRUD_application_2.Models;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 
@@ -10,7 +11,7 @@ namespace CRUD_application_2.Controllers
         // GET: User
         public ActionResult Index()
         {
-            return View("~/Views/User/Index.cshtml");
+            return View(userlist);
         }
 
         // GET: User/Details/5
